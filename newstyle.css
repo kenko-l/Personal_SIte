@@ -1,0 +1,213 @@
+body {
+    background-color: rgb(30, 30, 30);
+    color: rgb(204, 204, 204);
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 820px;
+    margin: 0 auto; 
+}
+
+#projects, #about, #contact {
+    width: 460px !important;
+    margin: 0 auto !important;
+}
+
+#sidebar {
+    top: 80px;
+    position: fixed;
+    text-align: right;
+    width: 228px;
+}
+
+#nav {
+    margin-top: 30px;
+}
+
+#external {
+    margin-top: 20px;
+}
+
+#name {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgb(221, 221, 221);
+}
+
+#content {
+    position: relative;
+    width: calc(100% - 300px);
+    margin-left: 270px;
+    display: block;
+    right: 0;
+}
+
+#projects {
+    width: 460px;
+    margin-inline: 0 auto;
+}
+
+#about {
+    width: 460px;
+    margin: 0 auto;
+}
+
+#contact {
+    width: 460px;
+    margin: 0 auto;
+}
+
+#projects li {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin: 0;
+    color: rgb(221, 221, 221);
+}
+
+img {
+    border-width: 9.6px;
+    border-color: rgb(51, 51, 51);
+    border-style: solid;
+}
+
+.body {
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#about {
+    padding-top: 102px;
+}
+
+#about img {
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    border: none;
+}
+
+#project-link:hover {
+    color: red;
+}
+#about-link:hover {
+    color: rgb(255, 165, 0);
+}
+#contact-link:hover{
+    color: yellow;
+}
+#linkedin-link:hover{
+    color: #00b4d8;
+}
+#github-link:hover{
+    color: rgb(124, 252, 0);
+}
+#demo-link:hover{
+    color: rgb(246, 55, 144);
+}
+#demo-link:hover img {
+    filter: hue-rotate(310deg) saturate(500%);
+}
+a:visited, a:active {
+    color: rgb(204, 204, 204);
+}
+
+a {
+    text-decoration: none
+}
+
+#visualizer {
+    width: 460px;
+    height: 230px;
+}
+#demo-link img {
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+    border: none;
+    width: 17px;
+    height: 17px;
+}
+
+#othello {
+    width: 460px;
+    height: 260px;
+}
+
+@media only screen and (max-width: 800px) {
+    #wrapper {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #sidebar {
+        position: static;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #name {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #nav {
+        margin-top: 20px;
+    }
+
+    #content {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    #projects, #about, #contact {
+        width: calc(100% - 40px) !important;
+        margin: 0 auto !important;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #visualizer, #othello {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Add this for the fade-in effect */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}

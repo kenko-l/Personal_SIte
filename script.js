@@ -1,31 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const projectLink = document.getElementById('project-link');
-    const aboutLink = document.getElementById('about-link');
-    const contactLink = document.getElementById('contact-link');
+    const content = document.getElementById('content');
 
-    function fadeInContent() {
-        const content = document.getElementById('content');
-        content.classList.add('fade-in');
-        setTimeout(() => {
-            content.classList.add('visible');
-        }, 100);
+    function fadeIn(element) {
+        if (element) {
+            element.classList.add('visible');
+        }
     }
 
-    projectLink.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.location.href = 'index.html';
-    });
-
-    aboutLink.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.location.href = 'about.html';
-    });
-
-    contactLink.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.location.href = 'contact.html';
-    });
-
     // Fade in content on page load
-    fadeInContent();
+    fadeIn(content);
 });

@@ -28,6 +28,7 @@ body {
     position: fixed;
     text-align: right;
     width: 228px;
+    font-size: 12px;
 }
 
 #nav {
@@ -66,6 +67,11 @@ body {
 #contact {
     width: 460px;
     margin: 0 auto;
+}
+
+#project-list {
+    margin: 0;
+    padding: 0;
 }
 
 #projects li {
@@ -167,12 +173,13 @@ a {
         position: static;
         width: 100%;
         text-align: center;
-        margin-bottom: 40px;
+        margin-top: 40px;
     }
 
     #name {
         margin-top: 20px;
         margin-bottom: 20px;
+        text-align: center;
     }
 
     #nav {
@@ -180,8 +187,8 @@ a {
     }
 
     #content {
-        width: 100%;
-        margin-left: 0;
+        width: 90%;
+        margin: 0 auto;
         margin-inline: 40px 40px;
         box-sizing: border-box;
     }
@@ -197,7 +204,7 @@ a {
     }
 
     #visualizer, #othello {
-        width: 100%;
+        width: 97%;
         height: auto;
     }
 }

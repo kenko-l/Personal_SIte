@@ -3,7 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function fadeIn(element) {
         if (element) {
+            element.style.opacity = '0';
             element.classList.add('visible');
+            setTimeout(() => {
+                element.style.opacity = '1';
+            }, 10);
         }
     }
 

@@ -157,10 +157,12 @@ ul {
 #demo-link:hover img {
     filter: hue-rotate(310deg) saturate(500%);
 }
-a:visited, a:active {
+a:active {
     color: rgb(204, 204, 204);
 }
-
+a:visited {
+    color: rgb(204, 204, 204);
+}
 a {
     text-decoration: none
 }
